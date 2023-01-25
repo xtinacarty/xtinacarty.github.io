@@ -49,7 +49,7 @@ const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
-
+/* 
 //project modal toggle function
 const projectModalfunc = function(){
   modalContainer.classList.toggle("active");
@@ -76,7 +76,7 @@ modalCloseBtn.addEventListener("click", projectModalfunc);
 overlay.addEventListener("click", projectModalfunc);
 
 
-
+ */
 
 
 // custom select variables
