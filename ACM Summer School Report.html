@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>christina carty personal portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    .image-container {
+            max-width: 400px; /* Set the maximum width of the container */
+            max-height: 300px; /* Set the maximum height of the container */
+            overflow: hidden; /* Hide any overflowing content */
+            position: relative; /* Position the container */
+            margin-bottom: 20px; /* Add some space between image containers */
+        }
+
+        .image-container img {
+            width: 100%; /* Make the image 100% width of the container */
+            height: auto; /* Maintain the aspect ratio of the image */
+            display: block; /* Remove extra spacing */
+            border: 2px solid var(--light-gray-70); /* Add a 2px border with the specified color */
+            border-radius: 10px; /* Round the corners of the image with a 10px radius */
+            margin: 0 auto;
+        }
+
+        .caption {
+            text-align: center; /* Center-align the caption text */
+            font-style: italic; /* Optionally, italicize the caption text */
+        }
+</style>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="scale" src="./assets/images/das-me.jpg" alt="Christina Carty">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Christina Carty">Christina Carty</h1>
+
+          <p class="title">Geo DataScience MSc Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:c.cartymir@gmail.com" class="contact-link">c.cartymir@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+34677295490" class="contact-link">+34 677 29 54 90</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Currently</p>
+
+              <time datetime="1982-06-23">Salzburg, Austria</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="home-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Originally</p>
+
+              <address>Champaign, IL, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <article class="blog  active" data-page="blog">
+
+      <img src="/assets/images/ACM header.jpg" alt="Image Header" class="image-header">
+      
+      <br>
+      
+
+        <header>
+          <h2 class="h2 article-title">The Software Girl Goes Hardware at the ACM Sumer School on High Performance Computing </h2>
+        </header>
+
+        
+
+        <section class="about-text">
+          <p>In July I was honored to be one of 60 out of 300 chosen applicants to attend the ACM Europe Summer School on HPC Computer Architecture for AI Dedicated Applications– the name is a mouthful and an accurate representation of the wide breadth and depth of topics presented to us in this jam-packed week. Me and my peers from all over the world – Indonesia, India, Israel, Israel, Canada, Netherlands…the list goes on!-- spent 6 days discussing the ins and outs of High Performance Computing in the context of AI applications. Keeping with the theme of my other summer school at the Center for Mathematical Research, I was a little out of my league– there was only one other Masters students beside me (the rest were PhD, Postdoc or industry), and my very strictly software background sometimes left me a little lost with all of the hard-ware and computer architecture jargon. That said, I found the week to be incredibly enlightening and helpful at understanding more of the mechanisms behind the vast computing power we take for granted.</p>
+
+          <p>The school was comprised of several talks and workshops offered in sessions throughout the day, as well as some special events. The opening course, “General purpose CPU history and the thrust towards a new era: Machine Learning Accelerator” was a great way to set the stage on the state-of-the-art of the several topics we would be exploring during the school, namely how general-purpose CPU technology has transformed due to the demands created by machine learning. The following course  exposed the fact that although I had heard the term “cache” used extensively in computer science domains, Dr. Per Senstrom’s talk “Cache and Memory Compression Techniques” really helped me understand the utility of cache and memory compression techniques especially in light of th heavy data demands presented by AI applications. The subsequent presentation by Jesus Labarta focused on highly parallel techniques and performance optimization in HPC systems, ideas we are currently diving into in the HPC course offered at UBS. Dr. Labarta’s presentation provided insights into programming models, asynchrony, and performance analysis tools.</p>
+
+          <p>The workshops presented by several Barcelona Supercomputing Center (BSC) researchers and staff were also opportunities for some hands-on interactions with several of the HPC topics alluded to by the other speakers. Rosa Badia and Jorge Ejarque shared their expertise in simplifying the life-cycle management of HPC, data analytics, and AI workflows via PyCOMPSs, a parallel task-based programming model. Josep Lluís Berral introduced us to Apache Spark, a framework for distributed data processing. In Dr. Berral’s workshop, we got the opportunity to connect to Mare Nostrum, the supercomputer at BSC that we would later be given a chance to visit in person.</p>
+
+          <div class="image-container">
+            <img src="/assets/images/mare nostrum.JPG" alt="Mare Nostrum">
+            <div class="caption">Visitng Mare Nostrum super computer at BSC</div>
+          </div>
+
+          <p>One of the highlights of the school for me was the presentation given by Alba Cervera on quantum computing. During my brief stint in the field of Physics, as mentioned in my previous summer school report, I became really interested in quantum computing and Dr. Cervera’s talk reignited some of that previous curiosity. Quantum computing is often considered as the other side of the spectrum from traditional supercomputing, in terms of underlying mechanism. However Dr. Cervera presented the basic ideas, assumptions and capabilities of quantum computing in a way that was not only digestible and easy to understand, but also framed the two styles of computing as more complementary than may initially seem. Dr. Cervera’s talk transitioned directly into a Q&A session with Leslie Lamport, a Turing Laureate and widely accomplished computer scientist. Dr. Lamport graciously and humbly answered the wide variety of audience questions (from “What career choices would you recommend to young computer scientists?” to “What’s your favorite book?”) and engaged in fascinating back and forth with Dr. Cervera, turned the moderator of the talk, on the modern state of computing, the surprising role of artificial intelligence, and Dr. Lamport’s journey as a student, researcher, professor, and leader in the field of HPC.</p>
+
+          <p>The school ended with a gaze forward via a keynote  on RISC-V, an “Instruction Set Architecture” or, a sort of framework toolkit that allows the building of more efficient, and more flexible processing hardware. The presenters emphasize how some of the unique traits of RISC-V as an ISA— namely the open-source, modular and scalable nature of its framework– is paving the way for HPC applications to be more accessible throughout Europe and the rest of the world.</p>
+
+          <p>Ultimately, however, 60 hours dedicated to a summer school can only be as good as the people you spend them with, and my colleagues at this event did not disappoint. Whether it was sharing our research and backgrounds with each other, meeting up for drinks and exploring the city after class, or complaining together about the terrible hotel food, the friends I made through this experience time and time again proved to be the highlight of my time at the ACM summer school. I am so grateful for them, as well as the speakers and event organizers for being one small stepping stone in my personal journey as a computer scientist, researcher, and learner.</p>
+
+
+  
+          </section>
+
+
+        </section>
+
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

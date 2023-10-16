@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>christina carty personal portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img class="scale" src="./assets/images/das-me.jpg" alt="Christina Carty">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Christina Carty">Christina Carty</h1>
+
+          <p class="title">Geo DataScience MSc Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:c.cartymir@gmail.com" class="contact-link">c.cartymir@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+34677295490" class="contact-link">+34 677 29 54 90</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Currently</p>
+
+              <time datetime="1982-06-23">Salzburg, Austria</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="home-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Originally</p>
+
+              <address>Champaign, IL, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <article class="blog  active" data-page="blog">
+
+      <img src="/assets/images/hypatia header.png" alt="Image Header" class="image-header">
+
+        <header>
+          <h2 class="h2 article-title">Making peace with Math & Physics at the Hypatia 2023 Summer School</h2>
+        </header>
+
+        <section class="about-text">
+          <p>In the Summer of 2017, I was a very misguided 20-year-old who thought she wanted to study Physics. The cons of this delusion were many– an almost failed fluid mechanics course is one that comes to mind– but among the pros was the decision to do a research internship at the Center for Mathematical Research in Barcelona. Despite my eventual pivot away from Physics, I still recall the research environment and my colleagues at CRM with fondness. So much so, that when I saw they host a summer school every year aimed at emphasizing women's involvement in mathematics, I was willing to revisit my semi-trauma and dive back into the world of Physics for a week.</p>
+          <p>We were a small group– less than 15 and, ironically, majority male– but my classmates for the week were kind, wickedly intelligent, and humble. I was the only Masters student of the group, and the only one coming from a non-physics or pure-mathematics discipline. This difference was starkly noted throughout the week, as I definitely struggled with the very high level and abstract concepts presented in the courses, but the aforementioned kindness of my peers was endless and instrumental as they patiently broke down key concepts, theories, and definitions brought up in the lecture. As a result, while I wasn’t able to break down every proof presented, I did come away with at least some small understanding of the core concepts being expressed in the lectures.</p>
+          <p>The school was made up of 3 key parts– two lectures and a colloquium. The first lecture, titled “Contact geometry and the many facets of complexity of hydrodynamics” was taught in tandem by Dr. Eva Miranda, a professor of Physics at the top technical university in Catalunya, and Dr. Daniel Peralta a full-time faculty member at the Institute of Science and Mathematics in Madrid. The second course, “Symbolic Dynamics in Celestial Mechanics” was headed solo by Dr. Susanna Terracini, a multi-award-winning physicist and professor at the University of Turin. The school also offered a colloquium presented by Dr. Cristopher Moore, a renowned mathematician, physicist, computer scientist and recently published author, who spoke on the more abstract ideas behind the dynamics of computation.</p>
+          <p>Eva and Daniel's course dove headfirst into contact geometry and its related – and seemingly unrelated– topics. Indeed, one of the key conclusions of the course revolved around establishing profound connections between the theory of computation and hydrodynamics, two fields that I had never considered as being distinctly and mathematically linked. The stars of the show were Euler Equations – a set of mathematical rules that describe how things move in the real world – and Beltrami fields, a type of fluid flow with an especially stable and complex structure. Throughout the course, Eva and Daniel proved how the intersection of these mathematical rules and the behavior of Beltrami fields can actually be used to simulate a universal Turing Machine. In simple terms (i.e., my level of understanding): there is a surprising relationship between the way liquids move and how computers process information. Thus, despite spending the majority of the first course switching between the “Beltrami Field” and “Euler Equation” Wikipedia pages, this course offered a unique perspective on the unexpected links between these two seemingly different fields of study.</p>
+
+          <p>The second course headed by Susanna, she attempted to demystify the idea of complex dynamics by delving into the mathematical underpinnings. Unfortunately for me, this had the opposite effect of demystification, but I was still able to vaguely grasp some of the main ideas of the course. The focus was on constructing intricate trajectories in celestial mechanics using global variational techniques, shedding light on the hidden complexities within the movements of celestial bodies. This course was divided into three main sections: the first tackled the N-body problem, exploring the intricate gravitational interactions among multiple celestial objects. The second session, dedicated to the Jacobi Metric, provided insight into the mathematical representation of celestial system dynamics, offering a unique perspective on measuring energy and distances within these systems. In the third and final session with Susanna, we discussed how the Bernoulli Shift can be used to understand the behavior of celestial bodies. This course was much more dense and I definitely struggled more to keep up, but sitting back and simply observing the mathematical intricacies and relationships of celestial mechanics presented by an expert in the field, even without completely understanding everything on the board, was an invaluable experience.</p>
+
+          <p>A highlight of the program for me was the colloquium presented by Cris Moore. This talk was attended by more than just the members of the Summer School, and the way our lecture hall flooded with CRM Faculty and Researchers eager to hear what Cris had to say should have been the first indicator of what was to come. In his talk, Cris delved into the fascinating intersection of computer science and dynamical systems, highlighting the surprising notion that some dynamical systems have the capacity to perform computations (as insinuated in the course taught by Eva and Daniel). His ideas unveiled the intriguing connection between Turing machines and continuous dynamical systems, demonstrating how undecidability and uncomputability can manifest in unexpected and unconventional domains. The audience was also introduced to various models of analog computation that have been explored over the years, shedding light on the diverse ways in which computation can be harnessed beyond traditional digital methods. Furthermore, the talk bridged the gap between dynamics and computational complexity theory by exploring the challenges of predicting the behavior of different physical and dynamical systems. It showcased the contrast between systems with algorithmic "shortcuts" and those that demand explicit simulation, offering a fresh perspective on the multifaceted relationship between dynamics and computation.</p>
+
+          <p>After feeling inspired by the ideas presented in his talk, I somehow found the courage to approach Cris after the colloquium only to discover that we share an alma mater– we both did our undergraduate degree at Northwestern University! The conversation with Cris after the discussion was as inspiring as his original talk as we discussed our time at NU, the barriers to entry to the world of Physics, and the endless possibilities of computation. He offered me his personal email and an assurance that he was always around to answer any questions, and offered more motivation to encourage me to “not be so scared of physics” whenever I needed.</p>
+
+          <p>The Hypatia 2023 Summer School at CRM offered me the opportunity to flex and strengthen my mathematical muscles (a warm-up I am very grateful for now, given the courses here at UBS) and meet some truly incredible individuals. The intimate atmosphere of the course, the high level of expertise and care from the professors, and the kindness of everyone around me made it a great week in one of my favorite cities in the world.</p>
+
+  
+          </section>
+
+
+        </section>
+
+
+      </article>
+
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

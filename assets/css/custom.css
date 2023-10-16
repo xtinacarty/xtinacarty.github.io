@@ -121,4 +121,7 @@ figure.avatar-box img{
   max-width: 100%; /* Set the maximum width of the image to 100% of its parent container */
   height: auto; /* Automatically adjust the height based on the max-width */
   display: block; /* Ensures the image respects the container's width */
+  border: 2px solid var(--light-gray-70); /* Add a 2px border with the specified color */
+  border-radius: 10px; /* Round the corners of the image with a 10px radius */
+
 }
