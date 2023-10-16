@@ -116,4 +116,8 @@ figure.avatar-box img{
 
  }
 
- 
+  /* Size down the image for screens wider than 580px */
+  .image-header {
+  max-width: 100%; /* Adjust the percentage as needed */
+  height: auto;    /* Maintain aspect ratio */
+}
